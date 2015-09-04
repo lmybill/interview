@@ -26,6 +26,9 @@ namespace qh
         // set & get
         char* operator[](size_t index);
 
+        //judge
+        bool operator==(const string &rhs);
+
     private:
         char*  data_;
         size_t len_;
