@@ -333,6 +333,7 @@ namespace qh
                 m_pCurPos = startpos;
                 return std::string();
             }
+            if(*(m_pCurPos-1) == '&' && quote == '=') startpos = m_pCurPos;
         }
 
         assert( m_pCurPos > startpos );
